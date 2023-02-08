@@ -1,0 +1,47 @@
+@charset "UTF-8";
+ 
+*{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+:root{
+  --cor01: #162F3C;
+  --cor02: #1F414B;
+  --cor03: #9FB5B9;
+  --cor04: #7A5B45;
+}
+body,html{
+  background-color: var(--cor03);
+  height: 100vh;
+  width: 100vw;
+}
+main{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+section#login{
+  background-color: aliceblue;
+  width: 250px;
+  height: 500px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
+
+}
+section#login > div#imagem{
+  background: var(--cor03) url(../imagens/pexels-iurii-laimin-14708405.jpg) no-repeat;
+  background-size: cover;
+  height: 200px;
+  display: block;
+}
+section#login > div#formulario{
+  padding: 10px;
+  display: block;
+}
