@@ -29,12 +29,12 @@ section#login{
   border-radius: 20px;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%;  
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
   transition: width 0.3s , height 0.3s;
   transition-timing-function: ease;
+  transform: translate(-50%, -50%);
 
 }
 section#login > div#imagem{
@@ -53,17 +53,39 @@ div#formulario > h1{
 }
 div#formulario > p {
   font-size: 0.8em;
+  
+}
+div.campo > span{
+  color: white;
+  font-size: 2em;
+  width: 30px;
+  padding: 5px;
+  transform: translate(-4px, -8px);
+}
+div.campo > input{
+  background-color: var(--cor03);
+  font-size: 1em;
+  width: calc(100% - 35px); /*Utilizado para calculos em css*/
+  height: 100%;
+  border: 0px;
+  border-radius: 8px;
+  padding: 4px;
+  transform: translateY(-17px);/*Para evitar incompatibilidade é interessante colocar qualquer operação com transform por ultimo*/
+}
+div.campo > input:focus-within{
+  background-color: white;
 }
 div.campo > label{
   display: none;
 }
 form > div.campo{
-  background-color: #7A5B45;
+  background-color: var(--cor02);
   width: 100%;
   display: block;
   height: 30px;
   border-radius: 5px;
   margin: 5px 0px;
+  border: 2px solid var(--cor02);
 }
 form > input[type=submit]{
   display: block;
@@ -95,7 +117,7 @@ form > a.botao{
   text-decoration: none;
 }
 form > a.botao:hover{
-  background-color: var(--cor03);
+  background-color: var(--cor02);
 
 }
 form > a.botao > span{
